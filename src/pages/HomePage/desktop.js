@@ -44,7 +44,7 @@ const HomePageDesktop = () => {
         if (response) {
             let dataCSV = CSV.parse(response.data)
             dataCSV.splice(0,1)
-            const data = dataCSV.map(csvRow=>({key:csvRow[0],name:csvRow[1],profession:csvRow[2],phone:csvRow[3],level:csvRow[4],district:csvRow[5],ward:csvRow[6]}))
+            const data = dataCSV.map(csvRow=>({key:csvRow[0],name:csvRow[1],profession:csvRow[2],phone:csvRow[3].replaceAll(".",""),level:csvRow[4],district:csvRow[5],ward:csvRow[6]}))
             let filterLevel = utils.distinct(data.map(d => d.level))
             let filterDistrict = utils.distinct(data.map(d => d.district))
             let filterProfession = utils.distinct(data.map(d => d.profession))
