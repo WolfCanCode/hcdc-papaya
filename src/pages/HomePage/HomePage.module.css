@@ -1,0 +1,49 @@
+.container {
+    padding: 15px 15px;
+}
+
+@media screen and (min-width:756px) {
+    .container {
+        padding: 25px 35px;
+    }
+}
+
+p {
+    padding:0;
+    margin:0;
+}
+
+.headerContainer {
+    text-align: center;
+}
+
+.headerContainer h3{
+    margin:5px 0;
+}
+
+.filterContainer {
+    margin: 10px 0 ;
+}
+
+.filterBox {
+    display: inline-block;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+}
+
+.filterBox label {
+    display:block;
+    font-weight:600;
+}
+
+.filterBox > div {
+    width: 40vw;
+}
+
+.phoneBtn {
+    padding-left: 0;
+}
+
+.search {
+    padding: 0 15px 15px 15px;
+}
